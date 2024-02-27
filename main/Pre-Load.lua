@@ -7,7 +7,7 @@ KeySystemUI.New({
 })
 repeat task.wait() until KeySystemUI.Finished() or KeySystemUI.Closed
 if KeySystemUI.Finished() and KeySystemUI.Closed == false then
-    loadstring(game:HttpGet("https://api.hoyo8020.repl.co/foundlua/raw/"..game.PlaceID..".lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NOOBARMYSCRIPTER/SirHub/main/main/Scripts/"..game.GameId..".lua"))()
 else
     warn("Player closed the GUI.")
 end
